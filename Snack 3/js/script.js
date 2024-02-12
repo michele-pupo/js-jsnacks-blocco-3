@@ -34,3 +34,9 @@ function tagliaArray(array, posizioneMin, posizioneMax) {
 // Esempio di utilizzo:
 let arrayTrimmed = tagliaArray(array1, 2, 4);
 console.log(arrayTrimmed);
+
+// creo una costante per stampare in pagina il risultato
+const resultElement = document.querySelector("#new-array");
+
+// stampo in pagina la frase ottenuta
+resultElement.innerText = arrayTrimmed;
