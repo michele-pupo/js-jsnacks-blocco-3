@@ -59,6 +59,12 @@ buttonElement.addEventListener('click', function(){
     // creo una costante per stampare in pagina il risultato
     const resultElement = document.querySelector("#phrase");
 
-    // stampo in pagina la parola invertita
-    resultElement.innerText = resultMergePhrase;
+    // utilizzo join(" ") per stamapre la frase correttamente
+    const praseToPrint = resultMergePhrase.join(" ");
+
+    // stampo in pagina la frase ottenuta
+    resultElement.innerText = praseToPrint;
+
+    // cambio la visualizzazione della dell'autore in pagina
+    document.querySelector("#author").style.display = "flex";
 })

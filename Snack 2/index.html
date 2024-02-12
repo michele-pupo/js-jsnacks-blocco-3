@@ -13,7 +13,7 @@
         <h1 class="text-center">Riesci ad indovinare la frase?</h1>
         <div class="container-fluid d-flex justify-content-center gap-5">
             <div>
-                <h1>Blocco parole 1</h1>
+                <h1 class="mt-3">Blocco parole 1</h1>
                 <ul>
                     <li>Misurare</li>
                     <li>progressi</li>
@@ -29,8 +29,8 @@
                 </ul>
             </div>
             <div>
-                <h1>Blocco parole 2</h1>
-                <ul>
+                <h1 class="mt-3">Blocco parole 2</h1>
+                <ul">
                     <li>i</li>
                     <li>della</li>
                     <li>dalle</li>
@@ -45,10 +45,13 @@
                 </ul>
             </div>
         </div>
-        <div class="button pointer-event">
+        <div class="button pointer-event text-center mt-3">
             <button id="generate-phrase" class="fs-3 rounded-2">Premi per scoprirla</button>
         </div>
-        <div id="phrase"></div>
+        <div class="fst-italic fs-1 mt-3 text-center container-fluid px-5">
+            <div id="phrase"></div>
+            <span style="display: none;" id="author" class="fst-italic text-danger fs-4 justify-content-end">"Bill Gates"</span>
+        </div>
     </div>
 
     <!-- script bootstrap -->
