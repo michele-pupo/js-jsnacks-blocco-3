@@ -54,7 +54,7 @@ buttonElement.addEventListener('click', function(){
 
     // creiamo una costante per il nuovo array
     const resultMergePhrase = foundationArray(array1, array2);
-    console.log(resultMergePhrase);
+    // console.log(resultMergePhrase);
 
     // creo una costante per stampare in pagina il risultato
     const resultElement = document.querySelector("#phrase");
