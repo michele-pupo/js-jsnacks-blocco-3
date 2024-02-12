@@ -9,7 +9,7 @@
 let input = prompt("Inserisci una frase:");
 
 // verifichiamo che l'utente abbia scritto qualcosa
-if (input === null || input === "") {
+if (input === null || input === "" || !isNaN(parseFloat(input))) {
 
     // se l'utente non ha scritto nulla
     // console.log("Nessuna frase inserita.");
@@ -42,7 +42,9 @@ function capitalInitials(stringa) {
 
         // prendiamo ogni parola che è contenuta nell'array e per ogni parola
         // con .charAt(0), cioè al carattere posto per primo applichiamo .toUpperCase()
-        words[i] = words[i].charAt(0).toUpperCase();
+        // aggiungiamo il metodo .slice(1) con indice 1 per far mettere il proseguio della parola
+        // dall'indice 1, dopo la maiuscola
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
 
     }
     

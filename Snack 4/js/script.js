@@ -11,7 +11,7 @@ function reorderString() {
     const string = prompt("Inserisci una parola:");
 
     // verifichiamo che l'utente abbia scritto qualcosa
-    if (string === null || string === "") {
+    if (string === null || string === "" || !isNaN(parseFloat(string))) {
 
         return alert("Nessuna parola inserita, ricarica la pagina");
     }

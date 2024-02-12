@@ -10,7 +10,7 @@ function reverseString() {
     let userWord = prompt("Inserisci una parola:");
 
     // controlliamo che la parola inserita dall'utente sia corretta
-    if (userWord === null || userWord === "") {
+    if (userWord === null || userWord === "" || !isNaN(parseFloat(userWord))) {
 
         return "Nessuna parola inserita.";
     }
